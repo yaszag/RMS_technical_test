@@ -18,8 +18,8 @@ public class NouvelAirService {
 
     @PostConstruct
     private void intFlightsList() {
-        nouvelAirRespons.add(new NouvelAirResponse("nouvelair", 200.21,100.32, 20.0, "TUN", "FRA", "2022-07-08T09:28:27.141", "2022-07-09T09:28:27.141"));
-        nouvelAirRespons.add(new NouvelAirResponse("nouvelair", 250.21,110.32, 15.0, "TUN", "FRA", "2022-07-08T09:28:27.141", "2022-07-09T09:28:27.141"));
+        nouvelAirRespons.add(new NouvelAirResponse("nouvelair", 200.21,100.32, 20.0, "FRA", "TUN", "2022-07-08T09:28:27.141", "2022-07-09T09:28:27.141"));
+        nouvelAirRespons.add(new NouvelAirResponse("nouvelair", 250.21,110.32, 15.0, "FRA", "TUN", "2022-07-08T09:28:27.141", "2022-07-09T09:28:27.141"));
     }
 
     public List<NouvelAirResponse> findFlights(NouvelAirRequest nouvelAirRequest) {

@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/flights")
+@RequestMapping("rmsflight")
 public class RmsFlightsController {
 
     private final RmsFlightsService rmsFlightsService;
@@ -21,7 +21,7 @@ public class RmsFlightsController {
         this.rmsFlightsService = rmsFlightsService;
     }
 
-    @GetMapping()
+    @GetMapping("/flights")
     public List<RmsFlightsResponse> searchFlights(@Valid RmsFlightsRequest rmsFlightsRequest){
         return rmsFlightsService.searchFlights(rmsFlightsRequest);
     }
